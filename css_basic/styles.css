@@ -14,11 +14,17 @@ main {
 article {
     flex: 2;
     overflow-y: auto;
+    background-color: #f9f9f9; 
+    padding: 20px; 
+    border: 1px solid #ddd;
 }
 
 aside {
     flex: 1;
     overflow-y: auto;
+    background-color: #fafafa;
+    padding: 20px;
+    border: 1px solid #ddd;
 }
 
 header, footer {
@@ -28,4 +34,62 @@ header, footer {
 
 header, footer {
     width: 100%;
+}
+
+header .logo {
+    font-size: 36px;
+    margin-right: 10px;
+    color: #f80002;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    display: inline;
+    vertical-align: middle;
+}
+
+header a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+footer {
+    padding: 5px 15px;
+    height: 80px;
+}
+
+h1, h2, h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f4f4f4;
+}
+
+a {
+    color: #f80002;
 }
