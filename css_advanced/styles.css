@@ -160,3 +160,104 @@ nav ul li a {
     font-style: italic;
     font-size: 18px;
 }
+
+/* Videos list section styles */
+.tutorials {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.tutorials h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #071629;
+}
+
+.tutorials h2 .purple {
+    color: #C271FF;
+}
+
+.tutorial-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tutorial {
+    width: calc(25% - 30px);
+    text-align: left;
+}
+
+.tutorial img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.tutorial img::after {
+    content: '\25B6';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tutorial h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #071629;
+}
+
+.tutorial p {
+    font-size: 14px;
+    color: rgba(7, 22, 41, 0.8);
+    margin-bottom: 15px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.author img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.author h4 {
+    font-size: 12px;
+    color: #C271FF;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stars img {
+    width: 80px;
+    height: auto;
+}
+
+.rating p {
+    font-size: 12px;
+    color: #C271FF;
+    margin-bottom: 0;
+}
