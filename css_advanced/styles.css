@@ -118,3 +118,45 @@ nav ul li a {
     font-size: 16px;
     font-style: italic;
 }
+
+/* Testimonial section styles */
+.testimonial {
+    background-color: #C271FF;
+    padding: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.testimonial > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.testimonial img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.testimonial blockquote {
+    font-style: italic;
+    font-size: 22px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.testimonial p:nth-of-type(1) {
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.testimonial p:nth-of-type(2) {
+    font-style: italic;
+    font-size: 18px;
+}
