@@ -1,0 +1,150 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    --color-primary: #FF6565;
+    --color-black: #071629;
+    --color-white: #ffffff;
+    --font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Global styles */
+body {
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-black);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+.header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px 0;
+    z-index: 100;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.header-logo img {
+    width: 160px;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu ul li {
+    margin-left: 30px;
+}
+
+.nav-menu ul li a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: lowercase;
+}
+
+.nav-menu ul li a:hover {
+    color: var(--color-primary);
+}
+
+/* Hero section styles */
+.hero {
+    background-image: url('images/headphones_hero_1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-white);
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 637px;
+    max-height: 313px;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    padding: 15px 30px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.cta-button:hover {
+    opacity: 0.9;
+}
+
+.hero p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Responsive design */
+@media screen and (max-width: 480px) {
+    .header-container {
+        flex-direction: column;
+    }
+
+    .nav-menu {
+        margin-top: 20px;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu ul li {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero h2 {
+        font-size: 14px;
+    }
+}
