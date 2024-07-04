@@ -13,6 +13,47 @@
     --font-family: 'Source Sans Pro', sans-serif;
 }
 
+/* Custom font icon */
+@font-face {
+    font-family: 'holberton_school-icon';
+    src: url('fonts/holberton_school-icon.eot?sq4eq4');
+    src: url('fonts/holberton_school-icon.eot?sq4eq4#iefix') format('embedded-opentype'),
+        url('fonts/holberton_school-icon.ttf?sq4eq4') format('truetype'),
+        url('fonts/holberton_school-icon.woff?sq4eq4') format('woff'),
+        url('fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="holberton_school-icon-"],
+[class*=" holberton_school-icon-"] {
+    font-family: 'holberton_school-icon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.holberton_school-icon-ic_sound:before {
+    content: "\e90e";
+}
+
+.holberton_school-icon-ic_video:before {
+    content: "\e910";
+}
+
+.holberton_school-icon-ic_music:before {
+    content: "\e90d";
+}
+
+.holberton_school-icon-ic_hearing:before {
+    content: "\e909";
+}
+
 /* Global styles */
 body {
     font-family: var(--font-family);
@@ -83,7 +124,6 @@ body {
 
 .hero-content {
     max-width: 637px;
-    max-height: 313px;
     padding: 0 20px;
 }
 
@@ -121,6 +161,49 @@ body {
     line-height: 1.6;
 }
 
+/* What we do section styles */
+.what-we-do {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.section-description {
+    max-width: 637px;
+    margin: 0 auto 60px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    flex-basis: 200px;
+    margin-bottom: 40px;
+}
+
+.service-item span {
+    font-size: 100px;
+    color: var(--color-primary);
+}
+
+.service-item h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.service-item p {
+    font-size: 14px;
+}
+
 /* Responsive design */
 @media screen and (max-width: 480px) {
     .header-container {
@@ -146,5 +229,14 @@ body {
 
     .hero h2 {
         font-size: 14px;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item {
+        flex-basis: 100%;
     }
 }
