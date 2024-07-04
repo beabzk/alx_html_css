@@ -249,6 +249,7 @@ body {
     font-size: 14px;
 }
 
+/* Contact us section styles */
 .contact-us {
     text-align: center;
     padding: 80px 0;
@@ -278,6 +279,43 @@ body {
 
 .contact-form .cta-button {
     margin-top: 20px;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #071629;
+    padding: 50px 0;
+    color: #ffffff;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.footer-logo {
+    width: 160px;
+}
+
+.social-links {
+    display: flex;
+}
+
+.social-link {
+    margin-left: 20px;
+}
+
+.social-link img {
+    width: 30px;
+    height: 30px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.5;
 }
 
 /* Responsive design */
@@ -320,5 +358,17 @@ body {
 
     .contact-form {
         width: 90%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .social-links {
+        margin-top: 20px;
+    }
+
+    .social-link:first-child {
+        margin-left: 0;
     }
 }
