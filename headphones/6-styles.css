@@ -358,6 +358,41 @@ body {
     opacity: 0.5;
 }
 
+/* Animations for "What we do..." section */
+.service-item {
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-item:hover {
+    transform: scale(1.05) rotate(5deg);
+}
+
+.service-item span {
+    transition: color 0.3s ease-in-out;
+}
+
+.service-item:hover span {
+    color: var(--color-black);
+}
+
+/* Animations for "Our results" section */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.result-item {
+    animation: bounce 2s infinite;
+}
+
+.result-item:hover {
+    animation-play-state: paused;
+}
+
 /* Responsive design */
 @media screen and (max-width: 480px) {
     .header-container {
@@ -410,5 +445,14 @@ body {
 
     .social-link:first-child {
         margin-left: 0;
+    }
+
+    /* disable animations to ensure a smooth experience on mobile devices */
+    .service-item:hover {
+        transform: none;
+    }
+
+    .result-item {
+        animation: none;
     }
 }
