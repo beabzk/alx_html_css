@@ -26,6 +26,34 @@
     font-display: block;
 }
 
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/source-sans-pro/SourceSansPro-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/source-sans-pro/SourceSansPro-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Spin Cycle OT';
+    src: url('fonts/Spin-Cycle-OT/spincycle_ot.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Spin Cycle OT 3D';
+    src: url('fonts/Spin-Cycle-OT/spincycle_3d_ot.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 [class^="holberton_school-icon-"],
 [class*=" holberton_school-icon-"] {
     font-family: 'holberton_school-icon' !important;
