@@ -59,7 +59,7 @@ The "Our Results" section showcases the achievements or key statistics, reusing 
 
 ### Contact Us
 
-A contact form was added to the landing page, allowing visitors to get in touch. Animations and constraints were applied to the form fields to enhance user experience.
+A contact form was added to the landing page, allowing visitors to get in touch.
 
 **Files:**
 
