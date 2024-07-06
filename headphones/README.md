@@ -10,8 +10,8 @@ In this project, I created a web page that closely follows the provided design s
 
 The following fonts were used in this project:
 
-- [**Source Sans Pro**](https://github.com/beabzk/alx_html_css/tree/main/headphones/fonts)
-- [**Spin Cycle OT**](https://github.com/beabzk/alx_html_css/tree/main/headphones/fonts)
+- [**Source Sans Pro**](https://github.com/beabzk/alx_html_css/tree/main/headphones/fonts/source-sans-pro)
+- [**Spin Cycle OT**](https://github.com/beabzk/alx_html_css/tree/main/headphones/fonts/Spin-Cycle-OT)
 
 ### Interactions
 
@@ -68,6 +68,31 @@ The footer section was implemented to provide additional navigation and social m
 
 - `4-index.html`
 - `4-styles.css`
+
+## Advanced Features
+
+The project was further enhanced with advanced CSS techniques and animations:
+
+### Pentagon Shapes with CSS
+
+Instead of using image files, the pentagons in the "Our results" section were created using pure HTML and CSS. This demonstrates advanced CSS shape-drawing capabilities.
+
+**Files:**
+
+- `6-index.html`
+- `6-styles.css`
+
+### Animations
+
+To make the page more engaging, animations were added to the "What we do..." and "Our results" sections. These animations provide visual feedback and enhance user interaction.
+
+- Items in the "What we do..." section scale and rotate slightly on hover.
+- Pentagons in the "Our results" section have a bouncing animation.
+
+**Files:**
+
+- `7-index.html`
+- `7-styles.css`
 
 ## Assets
 
